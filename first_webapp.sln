@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "first_webapp", "first_webapp\first_webapp.csproj", "{8BC578D9-406A-4821-92DB-6071EBADB5FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "first_webapp_resturants", "first_webapp_resturants\first_webapp_resturants.csproj", "{F93B9914-DF0E-47A5-A128-7138330E1E24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "first_webapp.data", "first_webapp.data\first_webapp.data.csproj", "{257D923C-529E-4313-A75F-D6016824AD10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BC578D9-406A-4821-92DB-6071EBADB5FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC578D9-406A-4821-92DB-6071EBADB5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC578D9-406A-4821-92DB-6071EBADB5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC578D9-406A-4821-92DB-6071EBADB5FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93B9914-DF0E-47A5-A128-7138330E1E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93B9914-DF0E-47A5-A128-7138330E1E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93B9914-DF0E-47A5-A128-7138330E1E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93B9914-DF0E-47A5-A128-7138330E1E24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{257D923C-529E-4313-A75F-D6016824AD10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{257D923C-529E-4313-A75F-D6016824AD10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{257D923C-529E-4313-A75F-D6016824AD10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{257D923C-529E-4313-A75F-D6016824AD10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
