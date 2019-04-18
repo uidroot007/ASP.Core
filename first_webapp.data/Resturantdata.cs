@@ -7,7 +7,8 @@ namespace first_webapp.data
 {
     public interface IResturantdata
     {
-        IEnumerable<Resturant> GetResturants();
+        IEnumerable<Resturant> GetResturantsByName(string name);
+        Resturant GetById(int Id);
     }
     public class InMemoryResturantData : IResturantdata
     {
@@ -17,9 +18,19 @@ namespace first_webapp.data
             resturants = new List<Resturant>()
             { 
               new Resturant { Name = "Amjees", Location = "Odense", Id =1, Cusinie=CusinieType.Indian },
-              new Resturant { Name = "Mama pizza", Location = "Roskilde", Id =1, Cusinie=CusinieType.American }
+              new Resturant { Name = "Mama pizza", Location = "Roskilde", Id =2, Cusinie=CusinieType.American }
             };
         }
-        IEnumerable<Resturant> IResturantdata.GetResturants() => from r in resturants orderby r.Name select r;
+
+        public Resturant GetById(int Id)
+        {
+            return resturants.SingleOrDefault(r => r.Id == Id);
+        }
+
+        public IEnumerable<Resturant> GetResturantsByName(string name = null) {
+            return from r in resturants
+                    where string.IsNullOrEmpty(name) || r.Name.StartsWith(name, StringComparison.Ordinal)
+                   orderby r.Name select r;
+        }
     }
 }

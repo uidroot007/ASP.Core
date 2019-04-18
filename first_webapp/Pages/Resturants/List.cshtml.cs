@@ -17,6 +17,8 @@ namespace first_webapp.Pages.Resturants
         public string Message { get => message; set => message = value; }
         public IConfiguration config { get; }
         public IEnumerable<Resturant>Resturants { get; set; }
+        [BindProperty(SupportsGet =true)] 
+        public string SearchTerm { get; set; }
 
         public ListModel(IConfiguration config, IResturantdata resturantData)
         {
@@ -25,8 +27,10 @@ namespace first_webapp.Pages.Resturants
         }
         public void OnGet()
         {
+
+
             Message = config["Message"];
-            Resturants = resturantdata.GetResturants();
+            Resturants = resturantdata.GetResturantsByName(SearchTerm);
         }
     }
 }
